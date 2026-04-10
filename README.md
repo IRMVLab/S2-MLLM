@@ -16,7 +16,7 @@
 
 
 #### News
-
+- **2026-04-10:** This code is released. 
 - **2026-03-23:** This repo is released.  
 - **2026-02-21:** S^2-MLLM is accepted by CVPR 2026.
 
