@@ -1,0 +1,139 @@
+# ==========================
+# 系统/编辑器自动生成文件
+# ==========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.atom/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# ==========================
+# 依赖包 / 第三方库目录
+# ==========================
+node_modules/
+jspm_packages/
+vendor/
+bower_components/
+
+# ==========================
+# 构建 / 打包产物
+# ==========================
+dist/
+build/
+out/
+output/
+target/
+*.o
+*.obj
+*.dll
+*.exe
+*.so
+
+# ==========================
+# 日志 / 临时文件
+# ==========================
+logs/
+log/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ==========================
+# 环境变量 / 密钥文件
+# ==========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+.htpasswd
+*.pem
+*.key
+*.pub
+
+# ==========================
+# 测试 / 覆盖率
+# ==========================
+coverage/
+.nyc_output/
+*.test
+*.spec
+
+# ==========================
+# 数据库 / 本地数据
+# ==========================
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+*.ide
+*.ide-wal
+
+# ==========================
+# Python 专用
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================
+# Java / Maven 专用
+# ==========================
+*.class
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ==========================
+# Go 专用
+# ==========================
+/bin/
+!/cmd/**/bin/
+!/internal/**/bin/
+
+# ==========================
+# 其他
+# ==========================
+*.pid
+*.seed
+*.pid.lock
+S2_MLLM.egg-info/*
+eval_log/*
+source_data/*
+nohup.out
+ckpt/*
+data/*
+results/*
+*.jsonl
+results/scanrefer/*

@@ -18,7 +18,7 @@
 #### News
 
 - **2026-03-23:** This repo is released.  
-- **2026-02-21:** S$^2$-MLLM is accepted by CVPR 2026.
+- **2026-02-21:** S^2-MLLM is accepted by CVPR 2026.
 
 
 ---
@@ -43,18 +43,20 @@ git clone https://github.com/IRMVLab/S2-MLLM.git
 conda create -n s2mllm python=3.10 -y
 conda activate s2mllm
 pip install --upgrade pip  
-pip install -r requirements.txt
+pip install -e .
 pip install flash-attn --no-build-isolation     
 ```
 ---
 ### Data Process
-1. Download Scanrefer, Nr3D, Sr3D
+1. Download the [ScanRefer](https://daveredrum.github.io/ScanRefer/), [Nr3D and Sr3D](https://github.com/referit3d/referit3d), and then run the following command. 
+```bash
+python scripts/preprocessing/process_scanrefer.py
+python scripts/preprocessing/add_type_nr3d_sr3d.py
+python scripts/preprocessing/process_n3rd.py
+python scripts/preprocessing/process_sr3d.py
+```
+2. Please follow this [instruction](https://github.com/LaVi-Lab/Video-3D-LLM/blob/main/scripts/3d/preprocessing/README.md) for detail. Download the ScanNetv2 dataset and EmbodiedScan dataset, then obtain the required meta information, and finally convert the annotations.
 
-2. Download the ScanNetv2 dataset, EmbodiedScan dataset 
-
-3. Exact meta information
-
-3. Convert the annotation
 ---
 
 ### Train
@@ -65,7 +67,8 @@ bash scripts/3d/train/train.sh
 
 ### Evaluation
 ```bash
-bash scripts/3d/eval/eval_scanrefer.sh
+bash scripts/3d/eval/eval_scanrefer.sh CKPT_name
+bash scripts/eval/eval_referit3d.sh CKPT_name
 ```
 ---
 ### Citation
